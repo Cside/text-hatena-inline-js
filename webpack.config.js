@@ -3,8 +3,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        index: path.join(__dirname, 'src/index.ts'),
-        vendor: ['moment']
+        index: path.join(__dirname, 'src/index.ts')
     },
     output: {
         path: path.join(__dirname, 'dist/js'),
@@ -29,22 +28,9 @@ module.exports = {
         ]
     },
     plugins: [
-
-        // pack common vender files
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
-            minChunks: Infinity
-        }),
-
-        // exclude locale files in moment
-        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-
         // minify
         // new webpack.optimize.UglifyJsPlugin()
     ],
-    node: {
-        fs: 'empty',
-    },
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
         alias: {
