@@ -1,0 +1,37 @@
+{
+  "name": "fixme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "$(npm bin)/webpack",
+    "watch": "$(npm bin)/webpack -w",
+    "test": "$(npm bin)/karma start",
+    "lint": "$(npm bin)/tslint --fix `git ls-files src`"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "~2.18.1",
+    "npm": "^5.7.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/chrome": "~0.0.49",
+    "@types/handlebars": "^4.0.36",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-notify-reporter": "^1.0.1",
+    "karma-webpack": "^2.0.13",
+    "mocha": "^5.0.2",
+    "ts-loader": "^3.5.0",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": ">=2.7.1 <2.8.0",
+    "webpack": "~3.7.0"
+  }
+}

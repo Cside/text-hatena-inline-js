@@ -1,0 +1,65 @@
+{
+    "rules": {
+        "semicolon": [
+            true,
+            "never"
+        ],
+        "no-trailing-whitespace": true,
+        "align": [
+            true,
+            "elements",
+            "members",
+            "parameters",
+            "statements"
+        ],
+        "no-consecutive-blank-lines": true,
+        "no-boolean-literal-compare": true,
+        "no-unnecessary-initializer": true,
+        "no-unnecessary-qualifier": true,
+        "one-line": [
+            true,
+            "check-catch",
+            "check-finally",
+            "check-else",
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "object-literal-key-quotes": [
+            true,
+            "as-needed"
+        ],
+        "object-literal-shorthand": true,
+        "ordered-imports": true,
+        "prefer-method-signature": true,
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "space-before-function-paren": [
+            true,
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always",
+                "method": "never",
+                "constructor": "never"
+            }
+        ],
+        "space-within-parens": 0,
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-separator",
+            "check-rest-spread",
+            "check-type",
+            "check-typecast",
+            "check-type-operator",
+            "check-preblock"
+        ],
+        "callable-types": true,
+        "arrow-parens": true
+    }
+}
