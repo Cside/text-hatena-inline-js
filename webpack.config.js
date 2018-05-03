@@ -10,7 +10,8 @@ module.exports = {
         filename: '[name].js'
     },
     module: {
-        loaders: [{
+        rules: [
+            {
                 enforce: 'pre',
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
@@ -33,8 +34,5 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
-        alias: {
-            handlebars: 'handlebars/dist/handlebars.min.js',
-        },
     },
 };

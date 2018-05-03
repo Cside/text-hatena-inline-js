@@ -7,7 +7,7 @@ module.exports = function (config) {
     config.set({
         // いる？
         basePath: '',
-        browsers: ['ChromeHeadless'],
+        browsers: ['PhantomJS'],
         frameworks: [
             'mocha',
             'chai',
@@ -33,6 +33,7 @@ module.exports = function (config) {
             'karma-mocha',
             'karma-chai',
             'karma-chrome-launcher',
+            'karma-phantomjs-launcher',
             'karma-notify-reporter',
         ],
         preprocessors: {
