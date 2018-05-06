@@ -1,7 +1,10 @@
 import { assert } from 'chai'
+import { parse } from './index'
 
-describe('test', () => {
+describe('parse', () => {
     it('test', () => {
-        assert.equal(1, 1)
+        return parse().then((word: string) => {
+            assert.equal(word, 'hello')
+        })
     })
 })
