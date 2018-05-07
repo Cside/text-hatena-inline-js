@@ -31,10 +31,6 @@
         "object-literal-shorthand": true,
         "ordered-imports": true,
         "prefer-method-signature": true,
-        "quotemark": [
-            true,
-            "single"
-        ],
         "space-before-function-paren": [
             true,
             {
@@ -59,7 +55,6 @@
             "check-type-operator",
             "check-preblock"
         ],
-        "callable-types": true,
-        "arrow-parens": true
+        "callable-types": true
     }
 }
