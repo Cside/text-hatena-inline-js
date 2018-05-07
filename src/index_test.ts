@@ -1,10 +1,13 @@
 import { assert } from 'chai'
-import { parse } from './index'
+import textHatenaInline from './index'
 
-describe('parse', () => {
-    it('test', () => {
-        return parse().then((word: string) => {
-            assert.equal(word, 'hello')
+describe('textHatenaInline', () => {
+    it('parse', () => {
+        const input = "[http://cside.me/]"
+        const expects = '<a href="http://cside.me/">http://cside.me/</a>'
+
+        return textHatenaInline.parse(input).then((result: string) => {
+            assert.equal(result, expects)
         })
     })
 })

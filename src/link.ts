@@ -21,7 +21,7 @@ type match = {
 
 export default class LinkReplacer {
     axios: AxiosInstance
-    constructor(args: { axios?: AxiosInstance }) {
+    constructor(args: { axios?: AxiosInstance } = {}) {
         this.axios = args.axios || Axios.create({
             timeout: 5000,
             adapter: cache.adapter,
